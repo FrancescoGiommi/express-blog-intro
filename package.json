@@ -13,5 +13,8 @@
     "url": "express-blog-intro"
   },
   "author": "Francesco Giommi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
