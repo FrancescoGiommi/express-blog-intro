@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
   res.send("Server del mio blog");
 });
 
+/* List object */
 const bachecaPost = [
   {
     titolo: "Ciambellone",
@@ -59,6 +60,10 @@ const bachecaPost = [
   },
 ];
 
+/* Static asset for images */
+app.use(express.static("images"));
+
+/* Bacheca route */
 app.get("/bacheca", (req, res) => {
   res.send(bachecaPost);
 });
