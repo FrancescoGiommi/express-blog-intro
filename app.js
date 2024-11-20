@@ -71,7 +71,11 @@ app.use(express.static("images"));
 
 /* Bacheca route */
 app.get("/bacheca", (req, res) => {
-  res.send(bachecaPost);
+  const data = {
+    bachecaPost: bachecaPost,
+    length: bachecaPost.length,
+  };
+  res.send(data);
 });
 
 app.listen(port, () => {
